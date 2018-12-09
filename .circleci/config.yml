@@ -5,12 +5,12 @@ jobs:
       - image: srcml/ubuntu_x86_64_base
 
     working_directory: ~/repo
-    
+
     steps:
       - checkout
       - run:
           name: Greeting
-          command: echo Hello, world.
+          command: cd src && make all
       - run:
           name: Print the Current Time
           command: date
