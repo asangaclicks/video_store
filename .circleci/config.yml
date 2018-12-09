@@ -9,8 +9,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
+          name: Compile Video Store
           command: cd src && make all
       - run:
-          name: Print the Current Time
-          command: date
+          name: Run Tests in Video Store
+          command: make run
