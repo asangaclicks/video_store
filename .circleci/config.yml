@@ -13,4 +13,4 @@ jobs:
           command: cd src && make all
       - run:
           name: Run Tests in Video Store
-          command: make run
+          command: cd src && make run
