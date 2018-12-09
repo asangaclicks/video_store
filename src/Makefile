@@ -10,7 +10,7 @@ OBJS=$(OBJ_DIR)/VideoStore.o $(OBJ_DIR)/Movie.o $(OBJ_DIR)/Rental.o $(OBJ_DIR)/C
 TOBJS=$(OBJ_DIR)/Movie_t.o $(OBJ_DIR)/Rental_t.o $(OBJ_DIR)/Customer_t.o
 EXE=$(BIN_DIR)/VideoStore $(BIN_DIR)/Movie_t $(BIN_DIR)/Rental_t $(BIN_DIR)/Customer_t
 
-CC= clang++
+CC= g++
 CFLAGS=-Wall
 
 .PHONY: all
