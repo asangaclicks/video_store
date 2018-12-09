@@ -3,6 +3,9 @@ jobs:
   build:
     docker:
       - image: srcml/ubuntu_x86_64_base
+
+    working_directory: ~/repo
+    
     steps:
       - checkout
       - run:
