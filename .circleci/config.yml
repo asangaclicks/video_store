@@ -12,5 +12,8 @@ jobs:
           name: Compile Video Store
           command: cd src && make all
       - run:
-          name: Run Tests in Video Store
+          name: Run Video Store
           command: cd src && make run
+      run:
+          name: Run Tests in Video Store
+          command: cd src && make test
